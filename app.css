@@ -1,0 +1,5 @@
+.marquee-track { will-change: transform; }
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track, .animate-spin-slow, .animate-twinkle { animation: none !important; }
+}
+.map-path { stroke-dasharray: 4 7; }
