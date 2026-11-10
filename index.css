@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 40 40% 92%;
+        --foreground: 40 18% 7%;
+        --card: 40 40% 96%;
+        --card-foreground: 40 18% 7%;
+        --popover: 40 40% 96%;
+        --popover-foreground: 40 18% 7%;
+        --primary: 228 59% 11%;
+        --primary-foreground: 40 40% 92%;
+        --secondary: 40 30% 87%;
+        --secondary-foreground: 40 18% 7%;
+        --muted: 40 30% 87%;
+        --muted-foreground: 40 10% 28%;
+        --accent: 200 78% 72%;
+        --accent-foreground: 228 59% 11%;
+        --destructive: 0 70% 45%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 40 18% 78%;
+        --input: 40 18% 70%;
+        --ring: 201 87% 33%;
+        --radius: 0.25rem;
+    }
+}
+
+@layer base {
+    * { @apply border-border; }
+    html { -webkit-text-size-adjust: 100%; }
+    html.lenis, html.lenis body { height: auto; }
+    .lenis.lenis-smooth { scroll-behavior: auto !important; }
+    body {
+        @apply bg-cream text-ink font-sans antialiased;
+        font-size: 16px;
+    }
+    ::selection { background: #7CC8F0; color: #0B132B; }
+    h1, h2, h3, h4 { font-family: 'Fraunces', Georgia, serif; font-variation-settings: "SOFT" 60, "WONK" 1; }
+    :focus-visible { outline: 2px solid #0B6A9E; outline-offset: 3px; }
+}
+
+@layer components {
+    .wrap { @apply mx-auto w-full max-w-[1400px] px-5 sm:px-8 lg:px-12; }
+    .eyebrow { @apply font-mono text-[12px] uppercase tracking-[0.22em]; }
+    .note { @apply font-hand text-2xl leading-none; }
+    .italic-wonk { font-style: italic; font-variation-settings: "SOFT" 100, "WONK" 1; }
+    .btn {
+        @apply relative inline-flex items-center gap-3 rounded-full px-6 py-3.5 text-[15px] font-medium overflow-hidden;
+        transition: background-color .35s ease, color .35s ease, transform .35s cubic-bezier(.2,.8,.2,1);
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-sky { @apply bg-sky text-night hover:bg-cream; }
+    .btn-ink { @apply bg-night text-cream hover:bg-sky-deep; }
+    .btn-line { @apply border border-current hover:bg-cream hover:text-night; }
+    .btn-line-dark { @apply border border-ink/70 text-ink hover:bg-night hover:text-cream; }
+    .link-u { background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat; transition: background-size .4s ease; }
+    .link-u:hover { background-size: 100% 1px; }
+    .grain::before {
+        content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 1; opacity: .09; mix-blend-mode: overlay;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+    .paper-edge { clip-path: polygon(0 2%, 6% 0, 14% 1.6%, 25% .2%, 37% 1.8%, 49% .4%, 62% 1.7%, 74% .3%, 86% 1.5%, 100% 0, 100% 100%, 0 100%); }
+    .arch { border-radius: 999px 999px 6px 6px; }
+    .spot::after {
+        content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 2;
+        background: radial-gradient(circle at var(--sx, 50%) var(--sy, 40%), transparent 0, transparent 22%, rgba(11,19,43,.55) 60%, rgba(11,19,43,.8) 100%);
+        transition: background .2s ease;
+    }
+    .ph-tag {
+        @apply absolute left-3 top-3 z-[3] inline-flex items-center gap-1.5 rounded-full bg-cream/90 px-2.5 py-1 font-mono text-[11px] uppercase tracking-[0.12em] text-ink;
+    }
+    .arch .ph-tag { top: auto; bottom: 12px; left: 50%; transform: translateX(-50%); white-space: nowrap; }
+    .pending {
+        @apply inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full border border-dashed px-2.5 py-0.5 font-mono text-[12px] tracking-wide;
+        border-color: currentColor;
+    }
+}
