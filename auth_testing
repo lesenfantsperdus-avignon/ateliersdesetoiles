@@ -1,0 +1,5 @@
+Auth testing (Emergent Google Auth)
+mongosh: insert users {user_id:'TEST_admin', email:'lesenfantsperdus.avignon@gmail.com'} and user_sessions {user_id:'TEST_admin', session_token:'TEST_session', expires_at: new Date(Date.now()+864e5)}.
+curl $API/api/auth/me -H "Authorization: Bearer TEST_session" → user JSON. Non-allow-listed email → 403.
+Browser: add cookie session_token (httpOnly, secure, sameSite None) on the preview domain, open /admin.
+Clean: delete TEST_ users and sessions; site_content holds saved edits (delete only test edits).
