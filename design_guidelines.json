@@ -1,0 +1,123 @@
+{
+  "project_title": "Les Enfants Perdus - Compagnie & Association Théâtrale",
+  "archetype": "ARCHETYPE 1: ORGANIC & EARTHY + SWISS EDITORIAL HYBRID",
+  "emotional_tone": "Poetic, European independent theatre, playful yet artistic, imaginary maps & starry night forest",
+  "theme": {
+    "default_mode": "light",
+    "primary_bg": "#FDFBF7",
+    "cream_surface": "#F6F2EA",
+    "forest_green_bg": "#122E22",
+    "night_blue_bg": "#0B132B",
+    "sky_blue_accent": "#0284C7",
+    "sky_blue_light": "#E0F2FE",
+    "gold_star_accent": "#F59E0B",
+    "text_main": "#1C1917",
+    "text_muted": "#57534E",
+    "text_light": "#F5F5F4"
+  },
+  "typography": {
+    "headline_font": "Playfair Display, Cormorant Garamond, or Bodoni Moda (serif, poetic & theatrical)",
+    "body_font": "Plus Jakarta Sans, General Sans, or Inter (clean, high legibility)",
+    "annotation_font": "Caveat, La Belle Aurore, or Courier Prime (handwritten theatre notes & stage cues)",
+    "scale": {
+      "hero_h1": "text-4xl sm:text-5xl lg:text-6xl font-serif tracking-tight leading-[1.1]",
+      "section_h2": "text-2xl sm:text-3xl lg:text-4xl font-serif tracking-tight",
+      "subsection_h3": "text-xl sm:text-2xl font-medium",
+      "body": "text-base sm:text-lg leading-relaxed text-stone-700",
+      "handwritten_note": "font-handwriting text-sky-600 rotate-[-2deg] text-lg sm:text-xl",
+      "label": "text-xs uppercase tracking-[0.2em] font-mono text-sky-800"
+    }
+  },
+  "layout_and_grid": {
+    "container_max_width": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "hero_layout": "Asymmetric 2-column or full-width editorial canvas with signature line-by-line masked text reveal and interactive star map backdrop",
+    "bento_grid": "MODE A: Tetris Grid with 12 columns, wide gaps (gap-8 to gap-12), mixed card sizes with organic paper-cut borders and hand-drawn SVG accents",
+    "navigation": {
+      "desktop": "Floating header bar with glassmorphism (backdrop-blur-xl bg-[#FDFBF7]/80 border border-stone-200/50 z-50), logo mark (Peter Pan compass/feather star), nav links, primary CTA 'Réserver un atelier'",
+      "mobile": "Full-screen slide-over drawer with theatrical curtain transition effect"
+    }
+  },
+  "pages_structure": [
+    {
+      "page": "Accueil (Home)",
+      "route": "/",
+      "sections": [
+        "Hero: Poetic headline, subtitle 'Théâtre, mouvement et création collective à Avignon', CTAs 'Découvrir les ateliers' / 'Découvrir notre démarche artistique', line-by-line masked reveal animation, 3D/Canvas floating star compass",
+        "Editorial Marquee: Slow drift with phrase 'EXPRESSION CORPORELLE • JEU THÉÂTRAL • AVIGNON LA CARRETERIE • JEU ET CRÉATION COLLECTIVE'",
+        "Association Intro: Brief story of Les Enfants Perdus at Théâtre La Carreterie, Avignon (association loi 1901)",
+        "Artistic Approach (Démarche): Inspired by Jacques Lecoq pedagogy, body movement, mask, physical theatre, collective creation",
+        "Educational Programme Overview: 3 groups teaser (Petites Étoiles, Ados, Adultes)",
+        "Founders Teaser: Chiara Virgilio & Simonida (École Lecoq alumni)",
+        "Featured Projects: Interactive toggle between 'Productions de l'Association' and 'Travaux des Fondatrices'",
+        "Location & Contact Snippet: Interactive map card (Théâtre La Carreterie, 101 rue de la Carreterie, 84000 Avignon)",
+        "Final Dramatic CTA Banner"
+      ]
+    },
+    {
+      "page": "L'association (About)",
+      "route": "/association",
+      "sections": [
+        "Origins & Philosophy: The universe of Peter Pan, lost worlds, childhood imagination translated to adult & youth theatre",
+        "Founders Bios: Chiara Virgilio & Simonida - detailed journey from École Internationale de Théâtre Jacques Lecoq to Avignon",
+        "Vision & Values: Collective creation, inclusive movement, freedom of expression",
+        "Théâtre La Carreterie Venue spotlight with annotated floor map graphic"
+      ]
+    },
+    {
+      "page": "Ateliers des Étoiles (Workshops)",
+      "route": "/ateliers",
+      "sections": [
+        "Programme Intro: Methodical overview of Jacques Lecoq movement pedagogy",
+        "3 Workshop Cards: 1) Petites Étoiles (6-11 ans, Sat 12h30-14h30), 2) Ados (12-17 ans, Wed 18h30-20h30), 3) Adultes tous niveaux (Mon 17h30-19h30 à partir du 7 déc)",
+        "Scannable Info Grid: Schedules, venue info, trial session info ('Séance d'essai offerte'), prices marked with clear '[Tarif à confirmer]' badge",
+        "Trial Session Action Form / Direct booking modal trigger"
+      ]
+    },
+    {
+      "page": "Projets & Création (Portfolio)",
+      "route": "/projets",
+      "sections": [
+        "Editorial Filter Bar: 'Tous', 'Association', 'Parcours Fondatrices', 'Recherche & Performance', 'À Venir'",
+        "Growable Portfolio Grid: Cards featuring title, year, category, synopsis, director/cast credits, and badges. Marked with 'photo à remplacer' placeholder badges on photography",
+        "Future Projects Timeline: Upcoming shows with dates, roles, and venue details"
+      ]
+    },
+    {
+      "page": "Contact",
+      "route": "/contact",
+      "sections": [
+        "Contact Information Card: Email (lesenfantsperdus.avignon@gmail.com), Address (Théâtre La Carreterie, 101 rue de la Carreterie, 84000 Avignon), Instagram link, Phone placeholder ('[Téléphone à confirmer]')",
+        "Dual Enquiry Toggle Form: Radio selection for 'Inscription aux Ateliers' vs 'Collaboration Professionnelle / Diffusion'",
+        "Contact Form: Stored in backend API/DB + mailto fallbacks, toast feedback with Sonner",
+        "Venue Access & Map view"
+      ]
+    }
+  ],
+  "visual_enhancers": {
+    "svg_decorations": "Custom inline SVGs for star constellations, hand-drawn paper tear borders, compass marks, theatre stage plot lines",
+    "photography_treatment": "Polaroid-style clipped frames, subtle 2deg rotatings, 'photo à remplacer' badge overlays with semi-transparent parchment tint",
+    "animations": "Framer Motion scroll triggers, line-by-line staggered text reveals, slow continuous text marquee via react-fast-marquee or CSS, Lenis smooth scrolling integration",
+    "micro_interactions": "Magnetic buttons, hover card lift with dual ambient shadow, badge pulse, tab slide indicators"
+  },
+  "testing_and_data_ids": {
+    "rule": "Every button, input, nav link, filter tab, card, and key text must have a kebab-case data-testid attribute.",
+    "examples": {
+      "nav_home": "data-testid=\"nav-link-home\"",
+      "nav_ateliers": "data-testid=\"nav-link-ateliers\"",
+      "cta_hero_ateliers": "data-testid=\"hero-cta-ateliers\"",
+      "cta_hero_demarche": "data-testid=\"hero-cta-demarche\"",
+      "workshop_card_kids": "data-testid=\"workshop-card-petites-etoiles\"",
+      "contact_form_submit": "data-testid=\"contact-form-submit-button\"",
+      "enquiry_toggle_atelier": "data-testid=\"enquiry-type-atelier\"",
+      "enquiry_toggle_collab": "data-testid=\"enquiry-type-collab\""
+    }
+  },
+  "instructions_to_main_agent": [
+    "Ensure Lenis or smooth scroll experience is active on page changes.",
+    "Maintain high accessibility contrast: Dark stone text (#1C1917) on Cream bg (#FDFBF7), white text on Forest Green (#122E22) and Night Blue (#0B132B).",
+    "Always mark placeholder photos clearly with 'photo à remplacer' overlay labels.",
+    "Always mark missing financial or phone details with visible '[à confirmer]' pill tags.",
+    "Include all required pages with smooth React Router navigation.",
+    "Use Sonner for toast notifications upon contact form submission."
+  ]
+}
